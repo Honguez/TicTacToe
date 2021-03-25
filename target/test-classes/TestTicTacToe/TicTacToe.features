@@ -1,0 +1,6 @@
+Feature:
+  Scenario:
+    Given plateau de jeu avec "X" en case 4
+    And plateau de jeu avec "X" en case 0
+    When joueur "O" joue
+    Then le joueur joue O en case 8
