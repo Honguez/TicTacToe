@@ -8,10 +8,18 @@ import org.junit.Test;
 public class TestMain {
 
     @Test
-    public void testValidatePosition(){
+    public void testValidatePositionTrue(){
         Board board = new Board();
         board.setBoardPosition(0,'X');
         Assert.assertFalse(Main.validatePosition(board,0));
+
+    }
+
+    @Test
+
+    public void testValidePositionFalse(){
+        Board board = new Board();
+        board.setBoardPosition(0,'X');
         Assert.assertTrue(Main.validatePosition(board,1));
     }
 
